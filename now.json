@@ -1,17 +1,13 @@
 {
   "version": 2,
-  "name": "my-nextjs-project",
+  "name": "User-Forms-Apis",
   "builds": [
     {
-      "src": "package.json",
-      "use": "@now/next"
-    },
-    {
       "src": "dist/**/*.js",
-      "use": "@now/node"
+      "use": "@now/node-server"
     }
   ],
-  "env": {
-    "MONGODB_URI": "@my-mongodb-uri"
+  "build": {
+    "env": {}
   }
 }
