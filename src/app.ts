@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 app.get("/", (req, res) => {
   res.send("hello world!");
 });
-
+console.log("from app");
 app.use("/v1", api);
 app.use(express.static(path.join(__dirname, "public")));
 
